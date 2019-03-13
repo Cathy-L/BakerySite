@@ -55,6 +55,7 @@ body {
 	text-decoration: none;
 	font-weight: bold;
 	letter-spacing: 2px;
+	transition: .5s ease;
 }
 
 #navBar a:hover {
@@ -69,18 +70,35 @@ body {
 	max-width: 75em;
 	height:50em;
 	line-height: 200%;
+	color: #616161;
 }
 
-#content h2 {
-	text-align:center;
+h2 {
+	font-size: 10pt;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 3px;
+	color: gray;
 }
 
 #rightnav {
 	float: right;
-	width: 160px;
+	width: 225px;
 	margin: 0;
-	padding: 1em;
+	padding: 10px 1em;
 	text-align: center;
+}
+
+#rightnav img {
+	display: block;
+	margin: 40px auto;
+	max-width: 200px;
+	transition: .5s ease;
+}
+
+#rightnav img:hover {
+	opacity: 0.3;
 }
 
 #footer {
@@ -89,6 +107,24 @@ body {
 	margin: 0 20px;
 	padding: 1.5em;
 	border-top: 1px solid #e0e0e0;
+	font-size: 9pt;
+	color: gray;
+	line-height: 200%;
+	letter-spacing: 1px;
+}
+
+#footer table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+#footer table th {
+	color: #879e54;
+	text-transform: uppercase;
+}
+
+#footer table td {
+	vertical-align: top;
 }
 
 #contact {
@@ -110,25 +146,9 @@ body {
 	bottom:50px;
 }
 
-#footer a:link {
-	color: #333;
-}
-
 #signature {
 	float:left;
+	font-size: 8pt;
+	color: gray;
+	margin: 0;
 }
-
-#date { 
-	float:right;
-	position:relative;
-	left:250px;
-}
-
-#leftnav p, #rightnav p {
-	margin: 0 0 1em 0;
-}
-
-#content h2 {
-	margin: 0 0 .5em 0;
-}
-
