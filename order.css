@@ -1,0 +1,161 @@
+/*
+	File: order.css;
+	Author: Cathy Li, Melanie Klock;
+	Date created: 09 Apr 2019;
+	Date modified: 09 Apr 2019;
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: small;
+	background-color: #aeb996;
+	background-image:url( "./images/background.jpg");
+}
+
+#container {
+	width: 80%;
+	margin: 0 auto;
+	line-height: 200%;
+	background-color: #fff;
+}
+
+#top {
+	margin-bottom: 20px;
+}
+
+#top img {
+	display: block;
+	margin: 0 auto;
+	max-width: 400px;
+}
+
+#navBar {
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	width: 98%;
+	height: 40px;
+	margin-bottom: 20px;
+	padding: 20px 10px 0 10px;
+	background-color: #f4edcf;
+}
+
+#navBar ul {
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 1%;
+	width: 100%;
+	right: 0px;
+	overflow: hidden;
+}
+
+#navBar ul li {
+	float: left;
+	width: 19.5%;
+}
+
+#navBar a {
+	color: #879e54;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: 2px;
+	transition: .5s ease;
+}
+
+#navBar a:hover {
+	color: #a8bc7a;
+}
+
+#content {
+	text-align: center;
+	margin: 10px 250px 20px 0;
+	border-right: 1px solid #e0e0e0;
+	padding: 10px 30px;
+	max-width: 75em;
+	height:50em;
+	line-height: 200%;
+	color: #616161;
+}
+
+h2 {
+	font-size: 10pt;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 3px;
+	color: gray;
+}
+
+#rightnav {
+	float: right;
+	width: 225px;
+	margin: 0;
+	padding: 10px 1em;
+	text-align: center;
+}
+
+#rightnav img {
+	display: block;
+	margin: 40px auto;
+	max-width: 200px;
+	transition: .5s ease;
+}
+
+#rightnav img:hover {
+	opacity: 0.3;
+}
+
+#footer {
+	text-align: center;
+	clear: both;
+	margin: 0 20px;
+	padding: 1.5em;
+	border-top: 1px solid #e0e0e0;
+	font-size: 9pt;
+	color: gray;
+	line-height: 200%;
+	letter-spacing: 1px;
+}
+
+#footer table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+#footer table th {
+	color: #879e54;
+	text-transform: uppercase;
+}
+
+#footer table td {
+	vertical-align: top;
+}
+
+#contact {
+	position:relative;
+	right:60px;
+}
+
+#hours {
+	position: relative;
+	bottom:10px;
+	float: left;
+}
+
+#connect {
+	float:right;
+	margin: 0;
+	padding: 1em;
+	position: relative;
+	bottom:50px;
+}
+
+#signature {
+	float:left;
+	font-size: 8pt;
+	color: gray;
+	margin: 0;
+}
