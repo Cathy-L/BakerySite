@@ -18,8 +18,7 @@
 		<nav class="nav nav-fill" id="navBar">
 			<a class="nav-item nav-link" href="home.html">Home</a>
 			<a class="nav-item nav-link active" href="#">Menu</a>
-			<a class="nav-item nav-link" href="#">Order</a>
-			<a class="nav-item nav-link" href="about.html">About Us</a>
+			<a class="nav-item nav-link" href="order_form.html">Order</a>
 			<a class="nav-item nav-link" href="contact.html">Contact</a>
 		</nav>
 
@@ -31,9 +30,83 @@
 
 		<div class="row">
 			<div class="col" id="content">
-				<h2>Contact Us</h2>
-				<p>Mung Bean Bakery was founded in 2019 by Cathy Li and Melanie Klock. They are both students at the University of Texas at Austin studying Neuroscience. Cathy has always had a passion and talent for baking all sorts of pastries. She utilizes her Asian roots to add little twists to her desserts. Melanie has always had a talent for eating such delicious baked goods, and together Cathy and Melanie make the perfect team! </p>
-				<p>You can contact the founders of Mung Bean Bakery at <a href="mailto:info@mungbeanbakery.com">info@mungbeanbakery.com</a>.</p>
+				<img src="./images/menu.png" alt="Menu">
+
+				<p><i>**Menu items listed here are available for order -- more varied selection in store**</i></p>
+			</div>
+		</div>
+
+
+		<div id="menu">
+			<div class="row menuitem">
+				<div class="col">
+					<h2>Macarons</h2>
+				</div>
+				<div class="col">
+					<h2>Chocolate Chip Cookies</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<h3>$36.00 / dozen</h3>
+					Our specialty item!<br>
+					Flavors: strawberry, lemon, raspberry, passionfruit, chocolate, matcha
+				</div>
+				<div class="col">
+					<h3>$20.00 / dozen</h3>
+					Chewy, gooey, with giant chocolate chunks. Delviered warm and fresh out of the oven.
+				</div>
+			</div>
+
+			<div class="row menuitem">
+				<div class="col">
+					<h2>Mini Key Lime Pie</h2>
+				</div>
+				<div class="col">
+					<h2>Cheesecake</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<h3>$30.00 / dozen</h3>
+					Tart key lime filling in mini flaky pie crusts, topped with whipped cream and a lime slice.
+				</div>
+				<div class="col">
+					<h3>$15.00 - 10 inch cake</h3>
+					Creamy, fluffy Japanese style cheesecake with a hint of lemon flavoring.
+				</div>
+			</div>
+
+			<div class="row menuitem">
+				<div class="col">
+					<h2>Strawberry Shortcake</h2>
+				</div>
+				<div class="col">
+					<h2>Chocolate Cake</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<h3>$20.00 - 9 inch cake</h3>
+					Light angel food cake in between layers of fream cream and sliced strawberries.
+				</div>
+				<div class="col">
+					<h3>$20.00 - 9 inch cake</h3>
+					Dense and rich dark chocolate cake with whipped chocolate ganache frosting.
+				</div>
+			</div>
+
+			<br><br>
+
+			<div class="row">
+				<div class="col">
+					<form action="order_form.html">
+						<input type="submit" class="btn" value="Order Now!">
+					</form>
+				</div>
 			</div>
 		</div>
 
@@ -52,15 +125,18 @@
 				info@mungbeanbakery.com
 			</div>
 
-			<div class = "col-sm">
+			<div class = "col-sm" id="icons">
 				<b>Connect</b><br>
-				(pics of social media icons here)
+				<a href="blank.html"><img src="./icons/facebook.png" alt="Facebook"></a>
+				<a href="blank.html"><img src="./icons/instagram.png" alt="Instagram"></a>
+				<a href="blank.html"><img src="./icons/twitter.png" alt="Twitter"></a>
+				<a href="blank.html"><img src="./icons/pinterest.png" alt="Pinterest"></a>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col">
-				<p id="signature">Cathy Li &amp; Melanie Klock &copy; March 12 2019</p>
+				<p id="signature">Cathy Li &amp; Melanie Klock &copy; April 12 2019</p>
 			</div>
 		</div>
 

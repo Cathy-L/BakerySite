@@ -1,13 +1,14 @@
 /*
-	File: project.css;
-	Author: Cathy Li, Melanie Klock;
-	Date created: 12 Mar 2019;
-	Date modified: 10 Apr 2019;
+File: project.css;
+Author: Cathy Li, Melanie Klock;
+Date created: 12 Mar 2019;
+Date modified: 10 Apr 2019;
 */
 
 body {
 	margin: 0;
 	padding: 0;
+	color: #616161;
 	font-family: Verdana, Geneva, Arial, sans-serif;
 	font-size: small;
 	text-align: center;
@@ -19,6 +20,10 @@ body {
 	padding:0;
 	line-height: 150%;
 	background-color: #fff;
+}
+
+.container i {
+	color: #bbb;
 }
 
 .nav {
@@ -46,7 +51,7 @@ body {
 
 #topimg {
 	display: block;
-	margin: 10px auto;
+	margin: 20px auto;
 	width: 400px;
 }
 
@@ -54,7 +59,18 @@ body {
 	margin-top: 30px;
 	padding: 10px 50px;
 	line-height: 200%;
-	color: #616161;
+}
+
+#content a {
+	color: #879e54;
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: 1px;
+	transition: .5s ease;
+}
+
+#content a:hover {
+	color: #a8bc7a;
 }
 
 h2 {
@@ -63,6 +79,29 @@ h2 {
 	font-weight: bold;
 	letter-spacing: 3px;
 	color: gray;
+}
+
+
+h3 {
+	font-size: 9pt;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 3px;
+	color: gray;
+}
+table {
+	margin:auto;
+}
+
+td {
+	text-align: right;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+
+.item {
+	padding-left: 15px;
+	text-align: left;
 }
 
 #socmed {
@@ -82,8 +121,7 @@ h2 {
 
 hr {
 	border-top: 1px solid #e0e0e0;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin: 30px 50px 10px 50px;
 }
 
 #footer {
@@ -99,10 +137,121 @@ hr {
 	text-transform: uppercase;
 }
 
+#icons img {
+	display: inline-block;
+	max-width: 25px;
+	margin: 3px;
+}
+
 #signature {
 	float:left;
 	font-size: 8pt;
 	color: gray;
 	margin:0;
 	padding-left:5px;
+}
+
+.slideshow-container {
+	width:100%;
+	position: relative;
+	margin: auto;
+}
+
+.mySlides {
+	display: none;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	user-select: none;
+}
+
+.prev {
+	left:20px;
+}
+
+.next {
+	right: 20px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(90,90,90,0.8);
+}
+
+.captiontxt {
+	background-color: rgba(244, 237, 207, 0.8);
+	color: #717171;
+	font-size: 18px;
+	font-family: Garamond, Georgia, Times, serif;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.numtxt {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+.dot {
+	cursor: pointer;
+	height: 8px;
+	width: 8px;
+	margin: 0 4px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.activeDot, .dot:hover {
+	background-color: #717171;
+}
+
+#menu {
+	width:60%;
+	margin:auto;
+}
+
+.menuitem {
+	margin-top: 50px;
+}
+
+.btn {
+	background-color: #f4edcf;
+  	border: none;
+  	color: #879e54;
+  	margin: 30px;
+  	padding: 10px 20px;
+  	text-align: center;
+ 	text-decoration: none;
+ 	letter-spacing: 2px;
+  	display: inline-block;
+  	font-size: 13px;
+}
+
+.btn:hover {
+	color: #a8bc7a;
+}
+
+.btn:focus {
+    outline: none;
 }

@@ -20,8 +20,7 @@
 		<nav class="nav nav-fill" id="navBar">
 			<a class="nav-item nav-link active" href="#">Home</a>
 			<a class="nav-item nav-link" href="menu.html">Menu</a>
-			<a class="nav-item nav-link" href="#">Order</a>
-			<a class="nav-item nav-link" href="about.html">About Us</a>
+			<a class="nav-item nav-link" href="order_form.html">Order</a>
 			<a class="nav-item nav-link" href="contact.html">Contact</a>
 		</nav>
 
@@ -39,6 +38,49 @@
 				<p>Fresh bread, cookies, cakes, and other pastries can be bought daily, or put in a custom order with us online or over the phone.</p>
 			</div>
 		</div>
+
+		<div class="row">
+			<div class="col" id="carousel">
+				<div class="slideshow-container">
+
+					<div class="slides">
+						<div class="numtxt">1 / 4</div>
+						<img src="./images/opening.jpg" alt="Grand opening">
+						<div class="captiontxt">Grand Opening! May 15, 2019 | 8:00 AM</div>
+					</div>
+
+					<div class="slides">
+						<div class="numtxt">2 / 4</div>
+						<img src="./images/cupcakes.jpg" alt="Birthday cupcakes">
+						<div class="captiontxt">Custom birthday cake orders!</div>
+					</div>
+
+					<div class="slides">
+						<div class="numtxt">3 / 4</div>
+						<img src="./images/croissants.jpg" alt="Fresh croissants">
+						<div class="captiontxt">Enjoy our fresh breads, baked daily</div>
+					</div>
+
+					<div class="slides">
+						<div class="numtxt">4 / 4</div>
+						<img src="./images/class.jpg" alt="Baking class">
+						<div class="captiontxt">Basics of Baking Class | May 4 - August 4</div>
+					</div>
+
+					<a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+					<a class="next" onclick="changeSlide(1)">&#10095;</a>
+				</div>
+
+				<br>
+				<span class="dot" onclick="gotoSlide(1)"></span>
+				<span class="dot" onclick="gotoSlide(2)"></span>
+				<span class="dot" onclick="gotoSlide(3)"></span>
+				<span class="dot" onclick="gotoSlide(4)"></span> 
+			</div>
+		</div>
+
+		<hr>
+
 		<div class="row">
 			<div class="col" id="socmed">
 				<h2>Follow Us</h2>
@@ -63,20 +105,25 @@
 				info@mungbeanbakery.com
 			</div>
 
-			<div class = "col-sm">
+			<div class = "col-sm" id="icons">
 				<b>Connect</b><br>
-				(pics of social media icons here)
+				<a href="blank.html"><img src="./icons/facebook.png" alt="Facebook"></a>
+				<a href="blank.html"><img src="./icons/instagram.png" alt="Instagram"></a>
+				<a href="blank.html"><img src="./icons/twitter.png" alt="Twitter"></a>
+				<a href="blank.html"><img src="./icons/pinterest.png" alt="Pinterest"></a>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col">
-				<p id="signature">Cathy Li &amp; Melanie Klock &copy; March 12 2019</p>
+				<p id="signature">Cathy Li &amp; Melanie Klock &copy; April 12 2019</p>
 			</div>
 		</div>
 
 		
 	</div>
 
+
+<script src="./javascript/carousel.js"></script>
 </body>
 </html>
