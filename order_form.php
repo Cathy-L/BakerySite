@@ -1,4 +1,15 @@
-<!DOCTYPE html>
+<?php
+
+session_start();
+
+if (!(isset($_COOKIE['username']) && $_COOKIE['username'] != '')) {
+	header("Location: login.php");
+}
+else {
+}
+
+?>
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8">

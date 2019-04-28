@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+
+session_start();
+
+?>
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -18,7 +23,7 @@
 	<div class="container">
 
 		<nav class="nav nav-fill" id="navBar">
-			<a class="nav-item nav-link active" href="#">Home</a>
+			<a class="nav-item nav-link" href="home.html">Home</a>
 			<a class="nav-item nav-link" href="menu.html">Menu</a>
 			<a class="nav-item nav-link" href="order_form.php">Order</a>
 			<a class="nav-item nav-link" href="contact.html">Contact</a>
@@ -33,61 +38,9 @@
 
 		<div class="row">
 			<div class="col" id="content">
-				<img src="./images/welcome.png" alt="Welcome!">
-				<p> We are a locally-sourced native Austin bakery specializing in Asian fusion flavors and styles.</p>
-
-				<p>Fresh bread, cookies, cakes, and other pastries can be bought daily, or put in a custom order with us online or over the phone.</p>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col" id="carousel">
-				<div class="slideshow-container">
-
-					<div class="slides">
-						<div class="numtxt">1 / 4</div>
-						<img src="./images/opening.jpg" alt="Grand opening">
-						<div class="captiontxt">Grand Opening! May 15, 2019 | 8:00 AM</div>
-					</div>
-
-					<div class="slides">
-						<div class="numtxt">2 / 4</div>
-						<img src="./images/cupcakes.jpg" alt="Birthday cupcakes">
-						<div class="captiontxt">Custom birthday cake orders!</div>
-					</div>
-
-					<div class="slides">
-						<div class="numtxt">3 / 4</div>
-						<img src="./images/croissants.jpg" alt="Fresh croissants">
-						<div class="captiontxt">Enjoy our fresh breads, baked daily</div>
-					</div>
-
-					<div class="slides">
-						<div class="numtxt">4 / 4</div>
-						<img src="./images/class.jpg" alt="Baking class">
-						<div class="captiontxt">Basics of Baking Class | May 4 - August 4</div>
-					</div>
-
-					<a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-					<a class="next" onclick="changeSlide(1)">&#10095;</a>
-				</div>
-
-				<br>
-				<span class="dot" onclick="gotoSlide(1)"></span>
-				<span class="dot" onclick="gotoSlide(2)"></span>
-				<span class="dot" onclick="gotoSlide(3)"></span>
-				<span class="dot" onclick="gotoSlide(4)"></span> 
-			</div>
-		</div>
-
-		<hr>
-
-		<div class="row">
-			<div class="col" id="socmed">
-				<h2>Follow Us</h2>
-				<a href="./blank.html"><img src="./images/pie.jpg" alt="Mini key lime pie"></a>
-				<a href="./blank.html"><img src="./images/macarons.jpg" alt="Macarons"></a>
-
+				
+				<p>You have successfully logged in.</p>
+								
 			</div>
 		</div>
 
@@ -124,7 +77,5 @@
 		
 	</div>
 
-
-<script src="./javascript/carousel.js"></script>
 </body>
 </html>

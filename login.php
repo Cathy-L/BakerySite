@@ -1,4 +1,38 @@
-<!DOCTYPE html>
+<?php
+
+session_start();
+
+$usernames = array();
+$passwords = array();
+$file = fopen("passwd", "r");
+while (!feof($file)) {
+	$line = fgets($file);
+	if ($line != "") {
+		$pair = explode(":", $line);
+		array_push($usernames, $pair[0]);
+		array_push($passwords, $pair[1]);
+	}
+}
+fclose($file);
+$accounts = array_combine($usernames, $passwords);
+
+if (isset($_POST['submit'])) {
+	if (!isset($_POST['username']) || !isset($_POST['password']) || empty($_POST['username']) || empty($_POST['password']) ) {
+		$output = "Please provide a username and a password.";
+	} else {
+		$un = $_POST['username'];
+		$pw = $_POST['password'];
+		if (in_array($un, $usernames) && $accounts[$un] = $pw) {
+			setcookie('username', $un, time()+3600);
+			header("location:success.php");
+		} else {
+			$output = "Login Failed.";
+		}
+	}
+}
+
+?>
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -18,7 +52,7 @@
 	<div class="container">
 
 		<nav class="nav nav-fill" id="navBar">
-			<a class="nav-item nav-link active" href="#">Home</a>
+			<a class="nav-item nav-link" href="home.html">Home</a>
 			<a class="nav-item nav-link" href="menu.html">Menu</a>
 			<a class="nav-item nav-link" href="order_form.php">Order</a>
 			<a class="nav-item nav-link" href="contact.html">Contact</a>
@@ -33,61 +67,29 @@
 
 		<div class="row">
 			<div class="col" id="content">
-				<img src="./images/welcome.png" alt="Welcome!">
-				<p> We are a locally-sourced native Austin bakery specializing in Asian fusion flavors and styles.</p>
+				<img src="./images/login.png" alt="Login">
 
-				<p>Fresh bread, cookies, cakes, and other pastries can be bought daily, or put in a custom order with us online or over the phone.</p>
-			</div>
-		</div>
+				<p>Please log in or register an account first before viewing this page.</p>
+				
+				<form name="login" method="post" action="">
+				<table>
+				  	<tr>
+				  		<td>Username:</td>
+				  		<td><input type="text" name="username"></td>
+						</tr>
+					<tr>
+						<td>Password:</td>
+						<td><input type="password" name="password"></td>
+					</tr>
+					<tr>
+						<td><input class="btn" type="submit" name="submit" value="Login"></td>
+						<td><input class="btn" type="reset" name="reset" value="Reset"></td>
+					</tr>
+				</table>
+				</form>
 
-		<div class="row">
-			<div class="col" id="carousel">
-				<div class="slideshow-container">
-
-					<div class="slides">
-						<div class="numtxt">1 / 4</div>
-						<img src="./images/opening.jpg" alt="Grand opening">
-						<div class="captiontxt">Grand Opening! May 15, 2019 | 8:00 AM</div>
-					</div>
-
-					<div class="slides">
-						<div class="numtxt">2 / 4</div>
-						<img src="./images/cupcakes.jpg" alt="Birthday cupcakes">
-						<div class="captiontxt">Custom birthday cake orders!</div>
-					</div>
-
-					<div class="slides">
-						<div class="numtxt">3 / 4</div>
-						<img src="./images/croissants.jpg" alt="Fresh croissants">
-						<div class="captiontxt">Enjoy our fresh breads, baked daily</div>
-					</div>
-
-					<div class="slides">
-						<div class="numtxt">4 / 4</div>
-						<img src="./images/class.jpg" alt="Baking class">
-						<div class="captiontxt">Basics of Baking Class | May 4 - August 4</div>
-					</div>
-
-					<a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-					<a class="next" onclick="changeSlide(1)">&#10095;</a>
-				</div>
-
-				<br>
-				<span class="dot" onclick="gotoSlide(1)"></span>
-				<span class="dot" onclick="gotoSlide(2)"></span>
-				<span class="dot" onclick="gotoSlide(3)"></span>
-				<span class="dot" onclick="gotoSlide(4)"></span> 
-			</div>
-		</div>
-
-		<hr>
-
-		<div class="row">
-			<div class="col" id="socmed">
-				<h2>Follow Us</h2>
-				<a href="./blank.html"><img src="./images/pie.jpg" alt="Mini key lime pie"></a>
-				<a href="./blank.html"><img src="./images/macarons.jpg" alt="Macarons"></a>
-
+				<?php echo $output ?>
+								
 			</div>
 		</div>
 
@@ -124,7 +126,5 @@
 		
 	</div>
 
-
-<script src="./javascript/carousel.js"></script>
 </body>
 </html>
